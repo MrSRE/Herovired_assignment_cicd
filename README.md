@@ -185,30 +185,27 @@ To start contributing and practicing HTML, follow these steps:
       exit 1
       fi
 
-# Copy the updated index.html file to Nginx root directory
-echo "Copying index.html to /var/www/html/"
-sudo cp "$CLONE_DIR/index.html" /var/www/html/
+      # Copy the updated index.html file to Nginx root directory
+      echo "Copying index.html to /var/www/html/"
+      sudo cp "$CLONE_DIR/index.html" /var/www/html/
 
-# Check if copy succeeded
-if [ $? -ne 0 ]; then
-    echo "Error copying index.html."
-    exit 1
-fi
+      # Check if copy succeeded
+      if [ $? -ne 0 ]; then
+         echo "Error copying index.html."
+         exit 1
+      fi
 
-# Restart Nginx to apply changes
-echo "Restarting Nginx..."
-sudo systemctl restart nginx
+      # Restart Nginx to apply changes
+      echo "Restarting Nginx..."
+      sudo systemctl restart nginx
 
-# Check if restart succeeded
-if [ $? -ne 0 ]; then
-    echo "Error restarting Nginx."
-    exit 1
-fi
+      # Check if restart succeeded
+      if [ $? -ne 0 ]; then
+         echo "Error restarting Nginx."
+         exit 1
+      fi
 
-echo "Deployment completed and Nginx restarted."
-
-
-
+      echo "Deployment completed and Nginx restarted."
      ```
 
 ## Contributing
