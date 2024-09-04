@@ -212,16 +212,25 @@ To start contributing and practicing HTML, follow these steps:
    ```
 
 ##  CronJob to check every 5 mints
-   - To edit the cronjob :   
-   ```bash
-      cronejob -e 
+
+   -  :   
+      ```bash
+       
       ```
 
    -  To edit the cronjon:   
    ```bash
-      */5 * * * * /usr/bin/python3 /mnt/p/Vscode/Devops/cicd_project/check_commits.py >> /mnt/p/Vscode/Devops/cicd_project/check_commits.log 2>&1
       ```
-
+1. **To edit the cronjob**
+   - to edit the crontab with below linux command:
+     ```bash
+     cronejob -e
+     ```
+2. **To Modified and create the job**
+   - To Modified:
+     ```bash
+     */5 * * * * /usr/bin/python3 /mnt/p/Vscode/Devops/cicd_project/check_commits.py >> /mnt/p/Vscode/Devops/cicd_project/check_commits.log 2>&1 
+     ```
 
 ## Contributing
 
