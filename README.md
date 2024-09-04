@@ -92,7 +92,7 @@ To start contributing and practicing HTML, follow these steps:
  
 
 ## 
-- Create Project Dir cicd_project , deploy file and check commit file :
+Create Project Dir cicd_project , deploy file and check commit file :
      ```bash
      mkdir cicd_project
      cd cicd_project
@@ -100,7 +100,7 @@ To start contributing and practicing HTML, follow these steps:
      touch deploy.sh
      ```
 ## Python Script to Check for New Commits
-- 
+
    ```bash
      vi  check_commits.py
    
@@ -158,7 +158,7 @@ To start contributing and practicing HTML, follow these steps:
      ```
 
 ## Bash Script to Deploy the Code
-- 
+
    ```bash
      vi  deploy.sh
      #!/bin/bash
@@ -207,6 +207,22 @@ To start contributing and practicing HTML, follow these steps:
 
       echo "Deployment completed and Nginx restarted."
      ```
+
+## File Persimissions 
+   ```bash
+   chmod +x /mnt/p/Vscode/Devops/cicd_project/deploy.sh
+   ```
+
+##  CronJob to check every 5 mints
+   - To edit the cronjob :   
+   ```bash
+      cronejob -e 
+      ```
+
+   -  To edit the cronjon:   
+   ```bash
+      */5 * * * * /usr/bin/python3 /mnt/p/Vscode/Devops/cicd_project/check_commits.py >> /mnt/p/Vscode/Devops/cicd_project/check_commits.log 2>&1
+      ```
 
 ## Contributing
 
