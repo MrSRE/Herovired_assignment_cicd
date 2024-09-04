@@ -91,14 +91,15 @@ To start contributing and practicing HTML, follow these steps:
      ```
  
 
-## 
-Create Project Dir cicd_project , deploy file and check commit file :
+## Create Project Dir cicd_project , deploy file and check commit file :
+   - Create below file:
      ```bash
      mkdir cicd_project
      cd cicd_project
      touch check_commits.py
      touch deploy.sh
      ```
+
 ## Python Script to Check for New Commits
 
    ```bash
@@ -157,7 +158,7 @@ Create Project Dir cicd_project , deploy file and check commit file :
          main()
      ```
 
-## Bash Script to Deploy the Code
+## Bash Script to Deploy the Code ##
 
    ```bash
      vi  deploy.sh
@@ -223,6 +224,7 @@ Create Project Dir cicd_project , deploy file and check commit file :
    ```bash
       */5 * * * * /usr/bin/python3 /mnt/p/Vscode/Devops/cicd_project/check_commits.py >> /mnt/p/Vscode/Devops/cicd_project/check_commits.log 2>&1
       ```
+
 
 ## Contributing
 
