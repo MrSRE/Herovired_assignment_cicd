@@ -72,8 +72,6 @@ To start contributing and practicing HTML, follow these steps:
      ```bash
      sudo apt-get install nginx -y
      ```
-
-     ```
 2. **Enable nginx**
    - Enable nginx Ubuntu :
      ```bash
@@ -89,7 +87,7 @@ To start contributing and practicing HTML, follow these steps:
      ```bash
      sudo systemctl start nginx
      ```
- 
+
 
 ## Create Project Dir cicd_project , deploy file and check commit file :
    - Create below file:
@@ -156,7 +154,8 @@ To start contributing and practicing HTML, follow these steps:
 
       if __name__ == '__main__':
          main()
-     ```
+   ```
+
 
 ## Bash Script to Deploy the Code ##
 
@@ -185,7 +184,6 @@ To start contributing and practicing HTML, follow these steps:
       echo "Error cloning or pulling repository."
       exit 1
       fi
-
       # Copy the updated index.html file to Nginx root directory
       echo "Copying index.html to /var/www/html/"
       sudo cp "$CLONE_DIR/index.html" /var/www/html/
@@ -195,7 +193,6 @@ To start contributing and practicing HTML, follow these steps:
          echo "Error copying index.html."
          exit 1
       fi
-
       # Restart Nginx to apply changes
       echo "Restarting Nginx..."
       sudo systemctl restart nginx
@@ -207,7 +204,7 @@ To start contributing and practicing HTML, follow these steps:
       fi
 
       echo "Deployment completed and Nginx restarted."
-     ```
+   ```
 
 ## File Persimissions 
    ```bash
